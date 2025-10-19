@@ -84,15 +84,14 @@ function HeroGeometric({
 }) {
     const fadeUpVariants = {
         hidden: { opacity: 0, y: 30 },
-        visible: (i: number) => ({
-            opacity: 1,
+        visible: { 
+            opacity: 1, 
             y: 0,
             transition: {
                 duration: 1,
-                delay: 0.5 + i * 0.2,
                 ease: "easeOut",
             },
-        }),
+        },
     };
 
     return (
@@ -160,6 +159,11 @@ function HeroGeometric({
                         variants={fadeUpVariants}
                         initial="hidden"
                         animate="visible"
+                        transition={{
+                            duration: 1,
+                            delay: 0.5 + 1 * 0.2,
+                            ease: "easeOut",
+                        }}
                     >
                             <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tight">
                                 <span
@@ -177,6 +181,11 @@ function HeroGeometric({
                         variants={fadeUpVariants}
                         initial="hidden"
                         animate="visible"
+                        transition={{
+                            duration: 1,
+                            delay: 0.5 + 2 * 0.2,
+                            ease: "easeOut",
+                        }}
                     >
                             <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
                                 Crafting exceptional digital experiences through
