@@ -55,7 +55,7 @@ export function ContactSection() {
     setSubmitStatus('idle');
 
     try {
-      const response = await fetch('https://formsubmit.co/24242c8483362f47187c0a2c609eddf6', {
+          const response = await fetch('https://formsubmit.co/ztm.jacinto.design@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
