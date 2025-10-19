@@ -16,6 +16,7 @@ interface ProjectPageProps {
     video?: string;
     liveUrl?: string;
     codeUrl?: string;
+    layout?: 'default' | 'same-row' | 'custom';
   };
 }
 
